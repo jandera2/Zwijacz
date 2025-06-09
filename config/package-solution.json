@@ -1,0 +1,42 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "Accordion Section FAQ Builder",
+    "id": "b3d072f8-9345-4f45-afc1-6e6e7baec14f",
+    "version": "2.1.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "developer": {
+      "name": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "websiteUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "react-accordion description"
+      },
+      "longDescription": {
+        "default": "react-accordion description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "react-accordion ReactAccordionWebPart Feature",
+        "description": "The feature that activates ReactAccordionWebPart from the react-accordion solution.",
+        "id": "061da2cd-f680-4da5-ab30-40a8ba1aafd8",
+        "version": "2.1.0.0",
+        "componentIds": [
+          "061da2cd-f680-4da5-ab30-40a8ba1aafd8"
+        ]
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/DynamicFAQ-Accordion.sppkg"
+  }
+}
