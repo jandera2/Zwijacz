@@ -1,9 +1,17 @@
 @import '~@fluentui/react/dist/sass/References.scss';
 
- .reactAccordion {
+// Dodaj globalne style dla czcionek Brand Center (opcjonalnie)
+:global {
+  --fontFamilyCustomFont100: var(--fontFamilyCustomFont100, var(--fontFamilyBase));
+  // Możesz dodać inne sloty czcionek, jeśli są dostępne w Brand Center
+}
+
+.reactAccordion {
+  font-family: var(--fontFamilyCustomFont100, var(--fontFamilyBase));
+
   .container {
     max-width: 700px;
-    margin: 0px auto;
+    margin: 0 auto;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
   }
 
@@ -25,6 +33,8 @@
   .title {
     @include ms-font-xl;
     @include ms-fontColor-white;
+    // Możesz dodać inną czcionkę Brand Center dla nagłówków, np.:
+    // font-family: var(--fontFamilyCustomFont200, var(--fontFamilyBase));
   }
 
   .subTitle {
@@ -38,20 +48,16 @@
   }
 
   .button {
-    // Our button
     text-decoration: none;
     height: 32px;
-
-    // Primary Button
     min-width: 80px;
     background-color: $ms-color-themePrimary;
     border-color: $ms-color-themePrimary;
     color: $ms-color-white;
-
-    // Basic Button
     outline: transparent;
     position: relative;
-    font-family: "Segoe UI WestEuropean","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+    // Zmieniamy font-family na Brand Center
+    font-family: var(--fontFamilyCustomFont100, "Segoe UI WestEuropean","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif);
     -webkit-font-smoothing: antialiased;
     font-size: $ms-font-size-m;
     font-weight: $ms-font-weight-regular;
